@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Heritage Sites of India</title>
+    <link rel="stylesheet" href="css/appointment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="appointment-container">
+        <div class="appointment-card">
+            <div class="appointment-header">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-temple-buddhist"></i>
+                    <span>Indian Heritage</span>
+                </a>
+                <h1>Book Your Visit</h1>
+                <p>Plan your spiritual journey to India's sacred heritage sites</p>
+            </div>
+
+            <form class="appointment-form" id="appointmentForm">
+                <div class="form-group">
+                    <label for="site">Select Heritage Site</label>
+                    <div class="input-group">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <select id="site" name="site" required>
+                            <option value="">Choose a site</option>
+                            <option value="khajuraho">Khajuraho Temples</option>
+                            <option value="konark">Konark Sun Temple</option>
+                            <option value="hampi">Hampi Temple Complex</option>
+                            <option value="meenakshi">Meenakshi Temple</option>
+                            <option value="kedarnath">Kedarnath Temple</option>
+                            <option value="somnath">Somnath Temple</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Visit Date</label>
+                    <div class="input-group">
+                        <i class="fas fa-calendar-alt"></i>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Preferred Time</label>
+                    <div class="input-group">
+                        <i class="fas fa-clock"></i>
+                        <select id="time" name="time" required>
+                            <option value="">Select time slot</option>
+                            <option value="morning">Morning (6:00 AM - 12:00 PM)</option>
+                            <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
+                            <option value="evening">Evening (4:00 PM - 7:00 PM)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="visitors">Number of Visitors</label>
+                    <div class="input-group">
+                        <i class="fas fa-users"></i>
+                        <input type="number" id="visitors" name="visitors" min="1" max="20" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <div class="input-group">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="special-requirements">Special Requirements</label>
+                    <div class="input-group">
+                        <i class="fas fa-info-circle"></i>
+                        <textarea id="special-requirements" name="special-requirements" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="terms">
+                        <input type="checkbox" name="terms" required>
+                        <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+                    </label>
+                </div>
+
+                <button type="submit" class="appointment-button">Book Appointment</button>
+            </form>
+
+            <div class="appointment-footer">
+                <p>Need help? <a href="#">Contact Support</a></p>
+            </div>
+        </div>
+
+        <div class="appointment-image">
+            <div class="image-overlay"></div>
+        </div>
+    </div>
+
+    <script src="js/appointment.js"></script>
+</body>
+</html>
